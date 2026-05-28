@@ -1,0 +1,195 @@
+/* WRAPPER */
+.certificate-wrapper {
+  text-align: center;
+  padding: 40px;
+  background: #f4f6fb;
+  font-family: "Georgia", serif;
+}
+
+/* CERTIFICATE */
+.certificate {
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  padding: 50px 40px;
+  border: 10px solid #c9a74d;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* 🔥 INNER BORDER (NEW - makes it premium) */
+.certificate::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 2px solid #c9a74d;
+}
+
+/* TITLE */
+.title {
+  font-size: 34px;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* TEXT */
+.sub {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* NAME */
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #000;
+}
+
+/* COURSE */
+.course {
+  font-size: 24px;
+  margin: 15px 0;
+  color: #c9a74d;
+  font-weight: 600;
+}
+
+/* COURSE IMAGE */
+.course-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+/* SCORE */
+.score {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* BOTTOM */
+.bottom {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* QR */
+.qr {
+  width: 90px;
+}
+
+/* BUTTON */
+.download-btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border: none;
+  background: linear-gradient(135deg, #000, #333);
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.download-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+/* 🔥 MATCH JSX CLASSES */
+
+/* TITLE */
+.cert-title {
+  font-size: 34px;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* TEXT */
+.cert-sub {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* NAME */
+.cert-name {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #000;
+}
+
+/* COURSE */
+.cert-course {
+  font-size: 24px;
+  margin: 15px 0;
+  color: #c9a74d;
+  font-weight: 600;
+}
+
+/* COURSE IMAGE */
+.cert-course-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+/* SCORE */
+.cert-score {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* FOOTER */
+.cert-footer {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* RIGHT SIDE (QR + SIGNATURE) */
+.cert-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* QR */
+.cert-qr {
+  width: 90px;
+}
+
+/* SIGNATURE */
+.cert-sign {
+  width: 120px;
+  margin-bottom: 5px;
+}
+
+/* LOGO */
+.cert-logo {
+  width: 70px;
+  margin-bottom: 10px;
+}

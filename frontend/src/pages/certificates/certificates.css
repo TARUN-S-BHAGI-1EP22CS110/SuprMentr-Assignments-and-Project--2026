@@ -1,0 +1,177 @@
+/* PAGE */
+.certificates-page {
+  padding: 40px;
+  text-align: center;
+  background: bisque;
+}
+
+/* GRID */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+/* CARD */
+.cert-card {
+  width: 550px;
+}
+
+/* ================= CERTIFICATE ================= */
+
+.cert-preview {
+  width: 900px;
+  height: 600px;
+  background: #ffffff;
+  padding: 50px 60px;
+  border-radius: 12px;
+  position: relative;
+  font-family: "Georgia", serif;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  border: 8px solid #c9a74d;
+}
+
+/* INNER BORDER */
+.cert-preview::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 2px solid #c9b44d;
+}
+
+/* WATERMARK */
+.cert-preview::after {
+  content: "CERTIFIED";
+  position: absolute;
+  font-size: 130px;
+  color: rgba(0,0,0,0.04);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  letter-spacing: 5px;
+  pointer-events: none;
+}
+
+/* ================= TOP ================= */
+
+.cert-logo {
+  width: 55px;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.cert-title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+/* TEXT */
+.cert-text {
+  font-size: 15px;
+  color: #555;
+  margin: 6px 0;
+}
+
+/* NAME */
+.cert-name {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 10px 0;
+  color:chocolate;
+}
+
+/* COURSE */
+.cert-course {
+  font-size: 24px;
+  color: #762c7b;
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+/* ================= IMAGE ================= */
+
+.cert-course-img {
+  width: 300px;          /* ⬅️ increased */
+  height: 200px;
+  object-fit: cover;
+  margin: 20px auto;     /* ⬅️ more spacing */
+  border-radius: 14px;
+
+  /* 🔥 premium look */
+  border: 4px solid #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+/* ================= DETAILS ================= */
+
+.cert-score {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.cert-date {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ================= FOOTER ================= */
+
+.cert-footer {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color:darkslateblue
+}
+
+/* RIGHT SIDE */
+.cert-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* SIGNATURE */
+.cert-sign {
+  width: 250px;          /* ⬅️ increased */
+  margin-bottom: 5px;
+
+  /* 🔥 make it visible like real signature */
+  opacity: 0.9;
+}
+/* QR */
+.cert-qr {
+  width: 90px;
+}
+
+/* ================= INFO BELOW ================= */
+
+.cert-info {
+  margin-top: 15px;
+}
+
+/* BUTTON */
+.download-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: rgb(9, 1, 26);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.download-btn:hover {
+  opacity: 0.9;
+}

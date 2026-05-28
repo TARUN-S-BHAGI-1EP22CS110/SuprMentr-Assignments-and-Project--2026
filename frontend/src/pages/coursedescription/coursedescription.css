@@ -1,0 +1,92 @@
+/* PAGE */
+.course-description {
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.course-header {
+  position: relative;   /* ✅ REQUIRED */
+  height: 350px;        /* ✅ MUST HAVE HEIGHT */
+  display: flex;
+  align-items: center;
+  padding: 50px 80px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+/* DARK OVERLAY */
+.course-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/* TEXT LEFT */
+.course-info {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.course-info h2 {
+  font-size: 36px;
+}
+
+.course-info {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+/* RIGHT CARD */
+.course-card-box {
+  position: absolute;
+  right: 500px;
+
+  /* 🔥 ALIGN WITH TEXT (NOT FULL CENTER) */
+  top: 190px;   /* 👈 adjust slightly if needed (130–160) */
+
+  z-index: 5;
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+/* CARD IMAGE */
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.common-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* DELETE */
+.delete-btn {
+  background: red;
+}
+
+/* DESCRIPTION */
+.course-body {
+  padding: 120px 80px 40px; /* 🔥 gives space for card */
+}
+
+.course-body h3 {
+  margin-bottom: 10px;
+}
+.course-top {
+  position: relative;
+}

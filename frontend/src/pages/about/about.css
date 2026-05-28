@@ -1,0 +1,21 @@
+.about {
+  padding: 80px 0;
+  text-align: center;
+  min-height: 55vh;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  color: magenta;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #555;
+}

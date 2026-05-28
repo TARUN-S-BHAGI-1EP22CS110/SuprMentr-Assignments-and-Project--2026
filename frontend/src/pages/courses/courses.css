@@ -1,0 +1,35 @@
+.courses {
+  padding: 60px 20px;
+  min-height: 100vh;
+  background: #f5f7fa;
+  text-align: center;
+}
+
+.courses h2 {
+  margin-bottom: 30px;
+  color: #4baf4e;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* parent container */
+.courses {
+  position: relative;
+}
+
+.mycourses-btn {
+  padding: 8px 16px;
+  background: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

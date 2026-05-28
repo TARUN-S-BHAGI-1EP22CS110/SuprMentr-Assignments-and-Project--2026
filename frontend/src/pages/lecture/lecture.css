@@ -1,0 +1,248 @@
+/* ================= MAIN LAYOUT ================= */
+.lecture-page {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  min-height: 80vh;
+  background: #f5f7fa;
+}
+
+/* ================= LEFT (VIDEO) ================= */
+.left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* VIDEO BOX */
+.video-box {
+  width: 100%;
+  max-width: 900px;
+  height: 450px;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* VIDEO */
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* TITLE */
+.lecture-title {
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* ================= RIGHT (SIDEBAR) ================= */
+.right {
+  flex: 1;
+  max-width: 320px;
+  height: 80vh;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* ADD BUTTON */
+.add-btn {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #6c5ce7, #00cec9);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+/* ================= MODULE ================= */
+.module-box {
+  background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+.module-header {
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.module-header:hover {
+  background: #f0f0f0;
+}
+
+/* ACTION BUTTONS */
+.module-box button {
+  margin: 5px 3px;
+  padding: 6px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.module-box button:nth-child(1) {
+  background: #00b894;
+  color: white;
+}
+
+.module-box button:nth-child(2) {
+  background: #d63031;
+  color: white;
+}
+
+/* ================= FORM ================= */
+.module-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.module-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.module-form button {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #6c5ce7;
+  color: white;
+  cursor: pointer;
+}
+
+.module-form button:hover {
+  opacity: 0.9;
+}
+
+/* ================= LECTURE ITEM ================= */
+.lecture-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+  padding: 8px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.lecture-item:hover {
+  background: #8a4baf;
+  color: white;
+}
+
+/* ACTIVE LECTURE */
+.lecture-item.active {
+  background: #8a4baf;
+  color: white;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  margin-left: 10px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  opacity: 0.8;
+}
+
+/* ================= PROGRESS ================= */
+.progress {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.progress progress {
+  width: 100%;
+  height: 10px;
+  margin: 5px 0;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .lecture-page {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .video-box {
+    height: 250px;
+  }
+}
+.progress-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #22c55e;
+  transition: width 0.3s ease;
+}
+
+.lecture-item.active {
+  background: #1e293b;
+  color: #fff;
+  border-left: 4px solid #22c55e;
+}
+.quiz-btn {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, black );
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quiz-btn:hover {
+  opacity: 0.9;
+}
